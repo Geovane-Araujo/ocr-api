@@ -2,6 +2,7 @@ version: "3"
 services:
   ocr-api:
     container_name: ocr_api
+    network_mode: host
     build:
       context: .
       dockerfile: Dockerfile
