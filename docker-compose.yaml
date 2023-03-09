@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ocr-api:
+    container_name: ocr_api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
